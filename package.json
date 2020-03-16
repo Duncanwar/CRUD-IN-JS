@@ -1,0 +1,24 @@
+{
+  "name": "crud-in-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duncanwar/CRUD-IN-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duncanwar/CRUD-IN-JS/issues"
+  },
+  "homepage": "https://github.com/Duncanwar/CRUD-IN-JS#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  }
+}

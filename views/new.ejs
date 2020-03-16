@@ -1,0 +1,7 @@
+<%-include('partials/header')%>
+<script src="index.ejs"></script>
+<form action="/update/<%= item.id %>" method="POST">
+    <input type="text" name="itemName" value="<%= item.firstName %>">
+    <input type="submit" value="Update">
+  </form>
+  <%-include('partials/footer')%>
