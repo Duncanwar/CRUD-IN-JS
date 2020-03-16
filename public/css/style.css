@@ -1,0 +1,63 @@
+body{
+    background: gray;
+}
+.container{
+text-align: center;
+margin: 200px auto;
+background: rgb(41, 39, 39);
+padding: 20px;
+width: 400px;
+}
+.name{
+padding: 20px ;
+width: 400px;
+margin-right: 5px;
+}
+#firstName{
+    color: linen;
+    background: rgb(41, 39, 39);
+}
+#lastName{
+    color: linen;
+    background: rgb(41, 39, 39);
+}
+#email{
+    color: linen;
+    width: 400px;
+    height:30px;
+    border: none;
+    background: rgb(41, 39, 39);
+}
+#password{
+    color: linen;
+    width: 400px;
+    background:rgb(41, 39, 39);
+    height:30px;
+    border-radius: 1px;
+}
+#submit{
+    color: white;
+    text-transform: uppercase;
+    background: green;
+    width: 400px;
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+#Sign-up{
+    width: 200px;
+    background: lime;
+}
+#Log-in{
+    widows: 200px;
+    background: lightslategray;
+}
+input[type=text]{
+    height:30px;
+    border-radius: 1px;
+}
+button{
+width: 200px;
+    border: none;
+    height: 30px;
+}

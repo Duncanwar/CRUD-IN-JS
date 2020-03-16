@@ -1,0 +1,23 @@
+ 
+ <table>
+    <tr>
+       <th>Id</th>
+       <th>FirstName</th>
+       <th></th>
+       <th></th>
+    </tr>
+ <% items.forEach((item)=> {%> 
+    <tr><td><%= item.id %></td>
+    <td><%= item.firstName %></td>
+   
+   <td><form action="/delete/<%=item.id%>" method="POST">
+     <input type="submit" value=Delete></form></td>
+    <td><a href="/edit/<%=item.id%>">Edit</a></td>
+     <br>
+   </tr> 
+
+    <% }); %>
+    
+
+
+   </table>
