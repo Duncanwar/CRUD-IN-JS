@@ -32,10 +32,6 @@ app.get("/",function(req,res){
 res.send("HomePage");
 });
 
-//app.get("/Login",function(req,res){
-   
-//res.render("Login");
-//});
 
 app.get("/SignUp",function(req,res){
     res.render("SignUP");
@@ -46,11 +42,8 @@ app.post("/home",function(req,res){
    
      const data={
         id:req.body.id,
-        firstName:req.body.firstName,
-      /* lastName:req.body.lastName,
-       email:req.body.email,
-        password:req.body.password
-     */}
+        firstName:req.body.firstName
+   }
  
    
     connection.query('insert into trycrud SET ?',data,function(error){
@@ -72,15 +65,15 @@ res.redirect("/index");
 
 app.get("/edit/:id",function(req,res){
     connection.query('select *  from trycrud where id=?',[req.params.id],(error,results)=>{
-        res.render('new');
+        res.render('new',{item:results[0]});
     });
 });
 
 app.post("/update/:id",function(req,res){
     connection.query('update trycrud set firstName = ? where id=?',[req.body.itemName,req.params.id],(error,results)=>{
         res.redirect("/index");
-    })
-})
+    });
+});
 
 //get the data in database
 app.get("/index",function(req,res){

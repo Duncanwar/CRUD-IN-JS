@@ -1,20 +1,20 @@
 <%-include('partials/header')%>
 
-<div class="container">
+<div class="container col-6">
     <form action="/home" method="POST" id="form">
         <button id="Sign-up">Sign UP</button><button id="Log-in">Log IN</button>
         <div class="name">
 
         <input type="number" id="studentId" name="id" placeholder="Student Id"><br><br>
         <input type="text" id="firstName" name="firstName" placeholder="First Name">
-       <!--  <input type="text" id="lastName" name="lastName" placeholder="Last Name">
- 
-    </div>
-    <h3>Sign Up</h3>
-   <input type="email" name="email" id="email" placeholder="Email Address"><br><br>
-    <input type="password" name="password" id="password" placeholder="Set A Password"><br><br><-->
+      
 
     <input type="submit" id="submit" name="submit">
     </form>
 </div>
+
+
 <%-include('partials/footer')%>
+<div>
+    <a href="/index">GO BACK TO THE LIST</a>
+</div>
