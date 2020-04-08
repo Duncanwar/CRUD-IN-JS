@@ -1,4 +1,4 @@
-let express=require("express");
+ let express=require("express");
 let app=express();
 let bodyParser=require('body-parser');
 let msyql=require("mysql");
@@ -70,7 +70,7 @@ app.get("/edit/:id",function(req,res){
 });
 
 app.post("/update/:id",function(req,res){
-    connection.query('update trycrud set firstName = ? where id=?',[req.body.itemName,req.params.id],(error,results)=>{
+    connection.query('update trycrud set firstName  = ? where id=?',[req.body.itemName,req.params.id],(error,results)=>{
         res.redirect("/index");
     });
 });
@@ -86,6 +86,6 @@ app.get("/index",function(req,res){
     })
 });
 
-app.listen(3000,function(){
+app.listen(3001,function(){
     console.log("server up");
 });
